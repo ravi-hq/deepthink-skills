@@ -1,6 +1,6 @@
-# HQ Skills
+# deepthink-skills
 
-A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills from Ravi HQ.
+A collection of strategic thinking and analysis [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills from Ravi HQ — multi-framework intelligence briefs, adversarial red-teaming, brainstorming pipelines, and 12 classic thinker lenses.
 
 ## Skills
 
@@ -37,31 +37,31 @@ A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude
 Install all skills to the current project (`./.claude/skills/`):
 
 ```bash
-npx skills add ravi-hq/hq-skills
+npx skills add ravi-hq/deepthink-skills
 ```
 
 Install globally (`~/.claude/skills/`) so the skills are available across all projects:
 
 ```bash
-npx skills add ravi-hq/hq-skills -g
+npx skills add ravi-hq/deepthink-skills -g
 ```
 
 Install a specific skill only:
 
 ```bash
-npx skills add ravi-hq/hq-skills --skill think
+npx skills add ravi-hq/deepthink-skills --skill think
 ```
 
 Target Claude Code explicitly (if you also have other agents installed):
 
 ```bash
-npx skills add ravi-hq/hq-skills -a claude-code
+npx skills add ravi-hq/deepthink-skills -a claude-code
 ```
 
 Browse what's available without installing:
 
 ```bash
-npx skills add ravi-hq/hq-skills --list
+npx skills add ravi-hq/deepthink-skills --list
 ```
 
 Manage installed skills:
@@ -79,13 +79,13 @@ Full CLI reference: [github.com/vercel-labs/skills](https://github.com/vercel-la
 Add the marketplace in Claude Code:
 
 ```
-/plugin marketplace add ravi-hq/hq-skills
+/plugin marketplace add ravi-hq/deepthink-skills
 ```
 
 Then install the plugin:
 
 ```
-/plugin install deepthink@hq-skills
+/plugin install deepthink@deepthink-skills
 ```
 
 Or browse and install interactively:
@@ -99,7 +99,7 @@ Update and remove:
 ```
 /plugin update
 /plugin remove deepthink
-/plugin marketplace remove hq-skills
+/plugin marketplace remove deepthink-skills
 ```
 
 ### Manual Installation
@@ -107,15 +107,15 @@ Update and remove:
 If you prefer to manage skills manually:
 
 ```bash
-git clone git@github.com:ravi-hq/hq-skills.git
-cp -r hq-skills/skills/* ~/.claude/skills/
+git clone git@github.com:ravi-hq/deepthink-skills.git
+cp -r deepthink-skills/skills/* ~/.claude/skills/
 ```
 
 For project-scoped install:
 
 ```bash
 mkdir -p .claude/skills
-cp -r /path/to/hq-skills/skills/<skill-name> .claude/skills/
+cp -r /path/to/deepthink-skills/skills/<skill-name> .claude/skills/
 ```
 
 ## Thinking Skills Usage Guide
