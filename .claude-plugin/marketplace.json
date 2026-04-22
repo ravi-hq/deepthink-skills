@@ -1,0 +1,39 @@
+{
+  "name": "hq-skills",
+  "owner": {
+    "name": "Ravi HQ"
+  },
+  "metadata": {
+    "description": "Ravi HQ skills marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "deepthink",
+      "description": "Multi-framework strategic thinking and analysis skills — intelligence briefs, adversarial red-teaming, brainstorming, deep research pipelines, and 12 thinker frameworks (Feynman, Kahneman, Shannon, Tetlock, Duke, Munger, Thiel, Helmer, Christensen, Meadows, Taleb, Bezos)",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/think",
+        "./skills/red-team",
+        "./skills/deepthink",
+        "./skills/brainstorm",
+        "./skills/prospect",
+        "./skills/add-thinker",
+        "./skills/garrytan",
+        "./skills/feynman",
+        "./skills/kahneman",
+        "./skills/shannon",
+        "./skills/tetlock",
+        "./skills/duke",
+        "./skills/munger",
+        "./skills/thiel",
+        "./skills/helmer",
+        "./skills/christensen",
+        "./skills/meadows",
+        "./skills/taleb",
+        "./skills/bezos"
+      ]
+    }
+  ]
+}
