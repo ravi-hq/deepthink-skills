@@ -30,7 +30,51 @@ A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude
 
 ## Installation
 
-### Via Claude Code Plugin Marketplace (Recommended)
+### Via skills.sh CLI (Recommended)
+
+[skills.sh](https://skills.sh) provides a cross-agent CLI (Claude Code, Cursor, Codex, and 40+ others) for installing skills from any GitHub repo.
+
+Install all skills to the current project (`./.claude/skills/`):
+
+```bash
+npx skills add ravi-hq/hq-skills
+```
+
+Install globally (`~/.claude/skills/`) so the skills are available across all projects:
+
+```bash
+npx skills add ravi-hq/hq-skills -g
+```
+
+Install a specific skill only:
+
+```bash
+npx skills add ravi-hq/hq-skills --skill think
+```
+
+Target Claude Code explicitly (if you also have other agents installed):
+
+```bash
+npx skills add ravi-hq/hq-skills -a claude-code
+```
+
+Browse what's available without installing:
+
+```bash
+npx skills add ravi-hq/hq-skills --list
+```
+
+Manage installed skills:
+
+```bash
+npx skills list              # show installed skills
+npx skills update            # pull latest versions
+npx skills remove <skill>    # uninstall
+```
+
+Full CLI reference: [github.com/vercel-labs/skills](https://github.com/vercel-labs/skills).
+
+### Via Claude Code Plugin Marketplace
 
 Add the marketplace in Claude Code:
 
@@ -50,15 +94,10 @@ Or browse and install interactively:
 /plugin marketplace
 ```
 
-### Update skills
+Update and remove:
 
 ```
 /plugin update
-```
-
-### Remove skills
-
-```
 /plugin remove deepthink
 /plugin marketplace remove hq-skills
 ```
